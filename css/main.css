@@ -55,6 +55,7 @@ body {
 	flex: 1;
 	min-height: 100vh;
 	transition: background 0.1s, color 0.2s;
+	mix-blend-mode: multiply;
 
 	--bg-color: #FFF;
 	--fg-color: #000;
@@ -64,10 +65,10 @@ body {
 }
 
 body.dark {
-	--bg-color: #000;
-	--fg-color: #FFF;
-	--green: #00e682;
-	--green-light: #00b47c;
+	--bg-color: #c5dbd9;
+	--fg-color: #15413e;
+	--green: #f9af6a;
+	--green-light: #f9af6a;
 }
 
 input[disabled] {

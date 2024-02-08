@@ -112,6 +112,20 @@ export const Words = (function() {
 				});
 				return obj;
 			})()
+		}, {
+			name: 'surfspots',
+			label: 'Surfspots',
+			selected: false,
+			words: (function() {
+				const obj = {};
+				languages.forEach(language => {
+					obj[language.name] = {
+						url: `words/surfspots/surfspots.json`,
+						list: null
+					}
+				});
+				return obj;
+			})()
 		}
 	]
 
