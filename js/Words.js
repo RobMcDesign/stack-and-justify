@@ -120,7 +120,21 @@ export const Words = (function() {
 				const obj = {};
 				languages.forEach(language => {
 					obj[language.name] = {
-						url: `words/surfspots/surfspots.json`,
+						url: `words/custom/surfspots.json`,
+						list: null
+					}
+				});
+				return obj;
+			})()
+		}, {
+			name: 'fruits',
+			label: 'Fruits',
+			selected: false,
+			words: (function() {
+				const obj = {};
+				languages.forEach(language => {
+					obj[language.name] = {
+						url: `words/custom/fruits.json`,
 						list: null
 					}
 				});
