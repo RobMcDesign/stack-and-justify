@@ -1,0 +1,6 @@
+Create custom lists from a selected dictionary
+
+1. Open terminal at folder location
+2. pcregrep '^(?=.*n)(?=.*o)[A-Za-z]{10}$' english.txt | pcregrep -vi '(.).*\1' > output.txt
+
+This code searches the English.txt file for 10 letter words with n o and no repeating characters and saves it in the output.txt 
